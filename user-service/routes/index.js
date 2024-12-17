@@ -12,7 +12,16 @@ const users = [
   },
 ];
 
-/* GET users listing. */
+/**
+ * @swagger
+ * /:
+ *  get:
+ *   description: Use to request all users
+ *  responses:
+ *   '200':
+ *   description: A successful response
+ */
+
 router.get('/', function(req, res, next) {
   res.json(users);
 });
